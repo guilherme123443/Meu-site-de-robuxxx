@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VENDAS de robux</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
+  <!-- Header -->
+  <header class="bg-gray-800 p-4 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-yellow-400">VENDAS de robux</h1>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="#home" class="hover:text-yellow-400">Início</a></li>
+          <li><a href="#produtos" class="hover:text-yellow-400">Produtos</a></li>
+          <li><a href="#carrinho" class="hover:text-yellow-400">Carrinho</a></li>
+          <li><a href="#pagamento" class="hover:text-yellow-400">Pagamento</a></li>
+          <li><a href="#contato" class="hover:text-yellow-400">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Página Inicial -->
+  <section id="home" class="text-center py-20 bg-gradient-to-r from-purple-900 to-gray-800">
+    <h2 class="text-4xl font-bold mb-4">Compre Robux pelo menor preço!</h2>
+    <p class="text-lg text-gray-300">Pacotes especiais, entrega rápida e segurança total.</p>
+  </section>
+
+  <!-- Produtos -->
+  <section id="produtos" class="py-16 container mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-10">Nossos Pacotes</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
+        <h3 class="text-xl font-semibold">400 Robux</h3>
+        <p class="text-green-400">R$ 9,99</p>
+        <button class="mt-4 bg-yellow-400 text-black px-4 py-2 rounded">Adicionar ao carrinho</button>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
+        <h3 class="text-xl font-semibold">800 Robux</h3>
+        <p class="text-green-400">R$ 18,99</p>
+        <button class="mt-4 bg-yellow-400 text-black px-4 py-2 rounded">Adicionar ao carrinho</button>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
+        <h3 class="text-xl font-semibold">1700 Robux</h3>
+        <p class="text-green-400">R$ 39,99</p>
+        <button class="mt-4 bg-yellow-400 text-black px-4 py-2 rounded">Adicionar ao carrinho</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carrinho -->
+  <section id="carrinho" class="py-16 bg-gray-800">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Seu Carrinho</h2>
+      <p class="text-gray-400">(Funcionalidade em construção)</p>
+    </div>
+  </section>
+
+  <!-- Pagamento -->
+  <section id="pagamento" class="py-16 container mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-10">Pagamento</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <!-- Cartão -->
+      <form class="bg-gray-800 p-8 rounded-xl shadow-lg">
+        <h3 class="text-xl font-semibold mb-4">Pagamento com Cartão</h3>
+        <input type="text" placeholder="Nome completo" class="w-full mb-4 p-3 rounded bg-gray-700 border border-gray-600">
+        <input type="text" placeholder="Número do cartão" class="w-full mb-4 p-3 rounded bg-gray-700 border border-gray-600">
+        <div class="flex gap-4">
+          <input type="text" placeholder="Validade (MM/AA)" class="w-1/2 p-3 rounded bg-gray-700 border border-gray-600">
+          <input type="text" placeholder="CVV" class="w-1/2 p-3 rounded bg-gray-700 border border-gray-600">
+        </div>
+        <button class="mt-6 bg-yellow-400 text-black px-6 py-2 rounded w-full">Pagar com Cartão</button>
+      </form>
+
+      <!-- Pix -->
+      <div class="bg-gray-800 p-8 rounded-xl shadow-lg text-center">
+        <h3 class="text-xl font-semibold mb-4">Pagamento via Pix</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Qr-code-example.png" alt="QR Code Pix" class="mx-auto mb-4 w-40 h-40">
+        <p class="text-sm text-gray-300 mb-2">Chave Pix (e-mail): <strong class="text-white">pagamento@robuxloja.com</strong></p>
+        <p class="text-sm text-gray-400">Escaneie o QR Code acima com seu aplicativo de banco para realizar o pagamento.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="py-16 container mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-10">Fale Conosco</h2>
+    <form class="max-w-xl mx-auto bg-gray-800 p-8 rounded-xl shadow-lg">
+      <input type="text" placeholder="Seu nome" class="w-full mb-4 p-3 rounded bg-gray-700 border border-gray-600">
+      <input type="email" placeholder="Seu e-mail" class="w-full mb-4 p-3 rounded bg-gray-700 border border-gray-600">
+      <textarea placeholder="Sua mensagem" class="w-full mb-4 p-3 rounded bg-gray-700 border border-gray-600"></textarea>
+      <button class="bg-yellow-400 text-black px-6 py-2 rounded">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center p-4 bg-gray-900 text-gray-500">
+    © 2025 VENDAS de robux - Todos os direitos reservados.
+  </footer>
+</body>
+</html>
